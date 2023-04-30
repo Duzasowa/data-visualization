@@ -18,6 +18,7 @@ const data = {
       borderWidth: 0,
       data: [100, 100, 100, 100, 100, 100, 100, 100],
     },
+
     {
       label: "Dataset 2",
       backgroundColor: "rgba(149,162,230, 0.9)",
@@ -25,11 +26,18 @@ const data = {
       borderWidth: 0,
       data: [40, 14, 20, 40, 15, 20, 36, 50],
     },
+
     {
       label: "Dataset 3",
-      backgroundColor: "rgba(174, 181, 229, 0.6)",
+      backgroundColor: "rgba(174, 181, 229, 0.8)",
       borderWidth: 0,
       data: [70, 24, 50, 50, 28, 50, 46, 35],
+    },
+    {
+      label: "Dataset 3a",
+      backgroundColor: "rgba(0,0,0, 0.1)",
+      borderWidth: 0,
+      data: [72, 26, 52, 52, 30, 52, 48, 37],
     },
     {
       label: "Dataset 4",
@@ -54,6 +62,14 @@ const data = {
       backgroundColor: "rgba(128,128,128, 0.1)",
       borderWidth: 0,
       data: [80, 80, 80, 80, 80, 80, 80, 80],
+    },
+    {
+      label: "Dataset 7a",
+      backgroundColor: "rgba(255,255,255, 0.5 )",
+      borderColor: "black",
+      borderWidth: 2,
+      borderBlur: 5,
+      data: [100, 100, 100, 100, 100, 100, 100, 100],
     },
   ],
 };

@@ -8,6 +8,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import data from "../data/data";
 import { Radar } from "react-chartjs-2";
 import "../App.css";
@@ -18,7 +19,8 @@ ChartJS.register(
   LineElement,
   Filler,
   Tooltip,
-  Legend
+  Legend,
+  ChartDataLabels
 );
 
 const ChartGraph = () => {
@@ -60,13 +62,25 @@ const ChartGraph = () => {
       },
     },
     plugins: {
-      // обертання відображення даних (не працєю)
       legend: {
         display: false,
       },
       datalabels: {
-        rotation: 0,
+        display: false,
+        // color: "red",
       },
+      // labels: {
+      //   render: "value",
+      //   fontColor: "black",
+      //   fontSize: 18,
+      //   fontStyle: "bold",
+      //   shadowBlur: 10,
+      //   shadowColor: "red",
+      //   shadowOffsetX: 0,
+      //   shadowOffsetY: 0,
+      //   textShadow: true,
+      //   shadowStroke: true,
+      // },
     },
   };
 
